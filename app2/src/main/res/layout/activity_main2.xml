@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tvDescrip"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvNum1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <EditText android:id="@+id/id_etNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/etNum1"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvNum2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <EditText android:id="@+id/id_etNum2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etNum2"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:inputType="numberDecimal"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvDescrip2"
+            android:textSize="20sp"/>
+        <RadioGroup android:id="@+id/id_rgOperaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/id_rbtnSuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtnSuma"
+            android:textSize="@dimen/size_text_radioButton"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/id_rbtnResta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtnResta"
+            android:textSize="@dimen/size_text_radioButton"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/id_rbtnMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtnMulti"
+            android:textSize="@dimen/size_text_radioButton"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/id_rbtnDivi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtnDivi"
+            android:textSize="@dimen/size_text_radioButton"
+            android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <Button  android:id="@+id/id_btnCalcular" android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCalcular"
+            android:textSize="20sp" android:textStyle="bold" android:textColor="@color/purple"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvResul"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25sp"/>
+            <TextView android:id="@+id/id_tvResulAqui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:hint="@string/tvAqui"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

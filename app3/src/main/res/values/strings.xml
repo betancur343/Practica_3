@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">App3: Cálculo Nota final</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tvDesc"> Descripción: Ingresar las notas obtenidas a lo largo del curso, para luego calcular la nota final correspondiente.\n</string>
+    <string name="tvQuiz">Quíz: </string>
+    <string name="tvExpo">Exposición: </string>
+    <string name="tvLab">Prácticas Laboratorio:</string>
+    <string name="tvfinal">Proyecto Final: </string>
+    <string name="etIngresarQ">Ingresar nota</string>
+    <string name="etIngresarE">Ingresar nota</string>
+    <string name="etIngresarL">Ingresar nota</string>
+    <string name="etIngresarF">Ingresar nota</string>
+    <string name="tvNota_final">Nota Final:\t </string>
+    <string name="etAquiNota">____</string>
+    <string name="btnCalcular">Calcular Nota</string>
+</resources>

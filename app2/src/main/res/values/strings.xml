@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">App2: Operaciones Básicas</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tvDescrip">Descripción: Realizar operaciones básicas con los números a continuación.\n</string>
+    <string name="tvDescrip2">Seleccionar operación a realizar: </string>
+
+    <string name="tvNum1">Número 1: </string>
+    <string name="etNum1">Digite un número.</string>
+
+    <string name="tvNum2">Número 2: </string>
+    <string name="etNum2">Digite otro número.</string>
+
+    <string name="rbtnSuma"> Suma (+).</string>
+    <string name="rbtnResta"> Resta (-).</string>
+    <string name="rbtnMulti"> Multiplicación (*).</string>
+    <string name="rbtnDivi"> División (/).</string>
+    <string name="tvResul">Resultado = \t</string>
+    <string name="tvAqui">___</string>
+
+    <string name="btnCalcular">Calcular</string>
+
+</resources>
