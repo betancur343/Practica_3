@@ -33,10 +33,10 @@ public class MainActivity3 extends AppCompatActivity {
                     aux_lab = Double.parseDouble(etLab.getText().toString());
                     aux_p_final = Double.parseDouble(etP_final.getText().toString());
                     nota = aux_quiz * 0.15 + aux_expo * 0.1 + aux_lab * 0.4 + aux_p_final * 0.35;
-                    tvNota.setText(String.valueOf(nota));
+                    tvNota.setText(String.format("%.2f", nota));
                 }catch(Exception e) {
                     //aux_quiz = 0; aux_expo = 0; aux_lab = 0; aux_p_final = 0;
-                    Toast.makeText(MainActivity3.this,"¡Operación inválida!\nEs necesario completar los campos vacíos.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity3.this,"¡Operación inválida!\nEs necesario completar los campos vacíos.", Toast.LENGTH_LONG).show();
                 }
                 //nota = aux_quiz * 0.15 + aux_expo * 0.1 + aux_lab * 0.4 + aux_p_final * 0.35;
                 //tvNota.setText(String.valueOf(nota));

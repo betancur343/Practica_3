@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +22,6 @@ public class MainActivity2 extends AppCompatActivity {
         final EditText etNum1 = (EditText) findViewById(R.id.id_etNum1);
         final EditText etNum2 = (EditText) findViewById(R.id.id_etNum2);
         final TextView tvResul = (TextView) findViewById(R.id.id_tvResulAqui);
-//        RadioGroup rgOperaciones = (RadioGroup) findViewById(R.id.id_rgOperaciones);
         final Button Calcular = (Button) findViewById(R.id.id_btnCalcular);
 
         Calcular.setOnClickListener(new View.OnClickListener() {
@@ -36,28 +34,28 @@ public class MainActivity2 extends AppCompatActivity {
                     switch (aux_oper) {
                         case "1":
                             aux_resul = aux_num1 + aux_num2;
-                            tvResul.setText(String.valueOf(aux_resul));
+                            tvResul.setText(String.format("%.2f", aux_resul));
                             break;
                         case "2":
                             aux_resul = aux_num1 - aux_num2;
-                            tvResul.setText(String.valueOf(aux_resul));
+                            tvResul.setText(String.format("%.2f", aux_resul));
                             break;
                         case "3":
                             aux_resul = aux_num1 * aux_num2;
-                            tvResul.setText(String.valueOf(aux_resul));
+                            tvResul.setText(String.format("%.2f", aux_resul));
                             break;
                         case "4":
                             if (aux_num2==0){
-                                tvResul.setText(" Math Error...");
+                                Toast.makeText(MainActivity2.this,"Error matemático.\nIndeterminación", Toast.LENGTH_LONG).show();
                                 break;
                             }else{
                             aux_resul = aux_num1 / aux_num2;
-                            tvResul.setText(String.valueOf(aux_resul));
+                                tvResul.setText(String.format("%.2f", aux_resul));
                             break;
                             }
                     }
                 }catch(Exception e) {
-                    Toast.makeText(MainActivity2.this,"¡Advertencia!\nLlenar los campos restantes y/o seleccionar la operación a realizar.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity2.this,"¡Advertencia!\nLlenar los campos restantes y/o seleccionar la operación a realizar.", Toast.LENGTH_LONG).show();
                 }
             }
         });

@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="@color/darkred"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:text="@string/tvDesc" android:textSize="19sp" android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              >
+                <RadioButton android:id="@+id/id_rbtnCirc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtnCirc"
+                    android:textSize="20sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/id_rbtnCuad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtnCuad"
+                    android:textSize="20sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/id_rbtnTriang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtnTriang"
+                    android:textSize="20sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/id_rbtnRect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtnRect"
+                    android:textSize="20sp"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvDesc2"
+                android:textSize="20sp" android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/id_tvBase" android:visibility="invisible"
+                    android:text="@string/tvBase" android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"/>
+                <EditText android:id="@+id/id_etBase"
+                    android:hint="@string/etIngBase" android:textSize="20sp" android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/id_tvAltura" android:visibility="invisible"
+                    android:text="@string/tvAltura" android:textSize="20sp" android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"/>
+                <EditText android:id="@+id/id_etAltura" android:visibility="invisible"
+                    android:hint="@string/etIngAltura" android:textSize="20sp" android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/id_tvRadio" android:visibility="invisible"
+                    android:text="@string/tvRadio" android:textSize="20sp" android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"/>
+                <EditText android:id="@+id/id_etRadio" android:visibility="invisible"
+                    android:hint="@string/etIngRadio" android:textSize="20sp" android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/id_tvLado" android:visibility="invisible"
+                    android:text="@string/tvLado" android:textSize="20sp" android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"/>
+                <EditText android:id="@+id/id_etLado" android:visibility="invisible"
+                    android:hint="@string/etIngLado" android:textSize="20sp" android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button android:id="@+id/id_btnAreaCirc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnCalcArea"
+                android:textSize="20sp" android:textColor="@color/white" android:typeface="monospace"
+                 android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvResulArea"
+                android:textSize="22sp" android:textColor="@color/white" android:typeface="monospace"/>
+            <TextView android:id="@+id/id_AreaResul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvAreaCirc"
+                android:textSize="22sp" android:textColor="@color/white" android:typeface="monospace"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
